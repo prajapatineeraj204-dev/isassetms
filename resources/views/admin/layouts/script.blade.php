@@ -37,3 +37,10 @@
     <!-- Template js-->
     <script src="{{asset('assets/js/script.js')}}"></script>
     <script src="{{asset('assets/js/theme-customizer/customizer.js')}}">  </script>
+
+    <script src="{{asset('assets/js/config.js')}}"></script>
+    <script src="{{asset('assets/js/sidebar-menu.js')}}"></script>
+    <script src="{{asset('assets/js/datatable/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('assets/js/datatable/datatables/datatable.custom.js')}}"></script>
+    <script src="{{asset('assets/js/tooltip-init.js')}}"></script>
+

@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\Role\RoleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin',function(){
-    return view('admin.dashboard');
-});
-
+Route::resource('admin', AdminDashboardController::class);
+Route::resource('role', RoleController::class);

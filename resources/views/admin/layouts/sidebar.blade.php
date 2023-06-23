@@ -16,13 +16,23 @@
             <h6>Pinned</h6>
           </li>
           <hr>
-          <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)"><i data-feather="home"></i><span class="lan-3">Dashboard</span></a>
+          <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('admin.index')}}"><i data-feather="home"> </i><span>Dashboard</span></a></li>
+
+          {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)"><i data-feather="home"></i><span class="la  n-3">Dashboard</span></a>
             <ul class="sidebar-submenu">
               <li><a class="lan-4" href="index.html">Default</a></li>
               <li><a class="lan-5" href="dashboard-02.html">Ecommerce</a></li>
             </ul>
+        </li> --}}
+        {{-- role permission --}}
+        <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)"><i data-feather="lock"></i><span>Role Permission</span></a>
+            <ul class="sidebar-submenu">
+              <li><a class="" href="{{route('role.index')}}">Role</a></li>
+              <li><a class="" href="dashboard-02.html">Permission</a></li>
+            </ul>
         </li>
-          <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html"><i data-feather="users"> </i><span>Support Ticket</span></a></li>
+        {{-- end role permission --}}
+          <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html"><i data-feather="users"> </i><span>User</span></a></li>
         </ul>
       </div>
       <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

@@ -8,13 +8,13 @@
     <div class="tap-top"><i data-feather="chevrons-up"></i></div>
     <!-- tap on tap ends-->
     <!-- Loader starts-->
-    <div class="loader-wrapper">
+    {{-- <div class="loader-wrapper">
       <div class="dot"></div>
       <div class="dot"></div>
       <div class="dot"></div>
       <div class="dot"> </div>
       <div class="dot"></div>
-    </div>
+    </div> --}}
     <!-- Loader ends-->
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -34,16 +34,7 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-sm-6">
-                  <h3>Default</h3>
-                </div>
-                <div class="col-sm-6">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
-                    <li class="breadcrumb-item">Dashboard</li>
-                    <li class="breadcrumb-item active">Default</li>
-                  </ol>
-                </div>
+                @yield('heading')
               </div>
             </div>
           </div>
@@ -60,6 +51,7 @@
       </div>
     </div>
 @include('admin.layouts.script')
-    <!-- login js-->
+    @yield('scripts')
+
   </body>
 </html>
